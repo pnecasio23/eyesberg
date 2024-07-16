@@ -1,0 +1,206 @@
+<html>
+<head>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  background: #009688;
+}
+
+.ripple-wrap {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  font-size: 0;
+  z-index: 1000;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+@-webkit-keyframes RIPPLER {
+  0%   { border-width: 0; }
+  40% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  
+  41% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  100% {
+    border-width: 1500px;
+    height: 2000px;
+    width: 2000px;
+    margin-top: -2500px;
+    margin-left:-2500px;
+    border-color: #009688;
+  }
+}
+@keyframes RIPPLER {
+  0%   { border-width: 0; }
+  40% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  41% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  100% {
+    border-width: 1500px;
+    height: 2000px;
+    width: 2000px;
+    margin-top: -2500px;
+    margin-left:-2500px;
+    border-color: #009688;
+  }
+}
+.ripple {
+  display: block;
+  height: 0;
+  width: 0;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #00796b;
+  border-radius: 100%;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  -webkit-animation: none;
+  animation: none;
+}
+.ripple-wrap.goripple {
+  display: block;
+}
+.ripple-wrap.goripple .ripple {
+ -webkit-animation-name: RIPPLER;
+ -webkit-animation-duration: 1.5s;
+ -webkit-animation-fill-mode: forwards;
+ animation-name: RIPPLER;
+ animation-duration: 1.5s;
+ animation-fill-mode: forwards;
+
+}
+
+
+
+/* This bit is just to look pretty. Not relevant to the implementation */
+
+body {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  color: #D7EEEC;
+}
+a {
+  color: #004d40;
+  font-weight: bold;
+}
+
+.wrap {
+  margin: 48px auto;
+  max-width: 580px;
+  text-align: justify;
+}
+h1, h2 {
+  font-weight: lighter;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap" id="content-area">
+  <h1>Material Design Ripple Transition</h1>
+<p>Just playing around to see if I can recreate the Material Design ripple as a page transition in CSS. Click any <a href="#">link</a> in this block of text to load another set of text. The <a href="#">links</a> don't go anywhere yet. They are just <a href="#">hooks</a> to allow you to click somewhere</p>
+
+<p>The style and animation is entirely CSS so it is smooth. JavaScript is used to add classes at the right time. It also pauses to wait for the content to be replaced, and calculates where to centre the hole. There are two stages to the animation. When a <a href="#">link</a> is clicked the border-width grows very large.</p>
+
+  <p>That's enough reading on this slide. Click a <a href="#">link</a> to load the second slide</p>
+  
+  
+</div>
+<div id="content-2" style="display:none">
+    <h2>Slide Two</h2>
+<p>This is the second slide. If you want you can <a href="#">go back to the first slide</a>. The second part of the animation is increasing the size of the element itself in order to create a hole.</p>
+
+<p>This transition could be used for presentation slides. Using pushState then this could be used as a transition between webpages.</p>
+   
+
+  </div>
+
+<div class="ripple-wrap"><div class="ripple"></div></div>
+<a href="https://codepen.io/ARS" target="_blank" class="ARS">codepen.io/ARS</a>
+</body>
+
+<script>
+$(document).ready(function() {
+  var ripple_wrap = $('.ripple-wrap'),
+      rippler = $('.ripple'),
+      finish = false,
+      monitor = function(el) {
+        var computed = window.getComputedStyle(el, null),
+            borderwidth = parseFloat(computed.getPropertyValue('border-left-width'));
+        if (!finish && borderwidth >= 1500) {
+          el.style.WebkitAnimationPlayState = "paused";
+          el.style.animationPlayState = "paused";
+          swapContent();
+        }
+        if (finish) {
+          el.style.WebkitAnimationPlayState = "running";
+          el.style.animationPlayState = "running";
+          return;
+        } else {
+          window.requestAnimationFrame(function() {monitor(el)});
+        }
+      };
+  
+  storedcontent = $('#content-2').html();
+  $('#content-2').remove();
+  
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function(e){
+    ripple_wrap.removeClass('goripple');
+  });
+
+  $('body').on('click', 'a', function(e) {
+    rippler.css('left', e.clientX + 'px');
+    rippler.css('top', e.clientY + 'px');
+    e.preventDefault();
+    finish = false;
+    ripple_wrap.addClass('goripple');
+    window.requestAnimationFrame(function() {monitor(rippler[0])});
+    
+    
+  });
+  
+  
+ 
+  function swapContent() {
+      var newcontent = $('#content-area').html();
+      $('#content-area').html(storedcontent);
+      storedcontent = newcontent;
+      // do some Ajax, put it in the DOM and then set this to true
+      setTimeout(function() {
+        finish = true;
+      },10);
+  }
+  
+});
+</script>
+
+
+</html>

@@ -1,0 +1,361 @@
+<html>
+<head>
+
+<title>EYESBERG - Articles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Articles">
+<meta name="keywords" content="articles, eyesberg">
+<meta name="author" content="Paul Necasio">
+<meta name="revised" content="Paul Necasio 26/12/2019">
+
+<link rel="stylesheet" href="..\css\website.css">
+<link rel="stylesheet" href="..\css\gallery.css">
+<link rel="stylesheet" href="..\css\vote.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../images/icon.png">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/forestfireheader.jpg");
+  min-height: 100%;
+}
+
+
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157744392-5"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-157744392-5');
+</script>
+</head>
+
+<body>
+<!-- Vote -->
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" class="butVote" style="z-index: 2; height: auto;">
+	<div class="parButton">
+	Enjoying ?
+	</div>
+	<div class="childButton">
+		Vote now !
+	</div>
+</button>
+
+<div id="modal-wrapper" class="modal" style="z-index: 2;">
+	<form class="modal-content animate">
+		<div class="imgContainer">
+			<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close">&times;</span>
+			<img src="..\images\support.png" alt="Support" class="support">
+			<div class="modalTitle" style="margin-top: 20px; text-align: center;">SUPPORT US</div>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">In 3 easy steps!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="http://bit.ly/EyesbergVoting" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Enter your email</p>
+			<p class="votep">[3] Select our website <b>'Eyesberg'</b> for "Best in Design" and "Best in Content"</p>
+			</ul>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">SEND FEEDBACKS!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="https://forms.gle/JXgGkjx23ZkzKQ876" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Rate us</p>
+			<p class="votep">[3] Send us feedbacks/suggestions!</p>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-blue">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><img src="../images/icon1.jpg" style="width:120px;"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-question"></i>ABOUT</a>
+	  <a href="article.html" class="w3-bar-item w3-button"><i class="fa fa-sticky-note  "></i> ARTICLES</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+	  <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+	  <a href="shop.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+      <a href="contactus.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+  </div>
+  <div class="open-sidebar" id="open"><a href="javascript:void(0)" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+  </a></div>
+</div>
+
+<!-- Sidebar for small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate- w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="article.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-paper"></i> ARTICLES</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+  <a href="games.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+  <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+  <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+  <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+</nav>
+
+</div>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="margin-left: 5%; padding: 20px; background: rgba(255, 255, 255, 0.3);">
+    <span class="w3-jumbo w3-hide-small">Forest fires are spreading</span><br>
+    <span class="author">By Paul Necasio (self-written)</span><br>
+    <span class="w3-large">Published: 26 December 2019</span><br>
+    <span class="w3-large">Updated: 29 December 2019</span>
+  </div>
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <span>
+	<div id="andesign"></div>
+	<h3 class="articlename">FOREST FIRES</h3>
+  </span>
+  
+  <p class="articlecontent"><b>A simple match can start a vast forest fire.</b> At the start of the 1980s, the world is already
+	aware that the Amazon rainforest is already on fire and currently in danger. Trees are being destroyed at a startling rate. From an area the size
+	of Belgium, to New York, to California, the parts of the forest are being  cut. This event captured the world's attention, or at least, the West, 
+	because the Amazon is home to half of the species of life on Earth and the forest is in theri hemisphere. Not only that but the Amazon also provides one-fifth of the oxygen we breathe and 20% 
+	of the world's freshwater. By the 1990s, the destruction accelerates and it seems like it was too late to save it. The rate of deforestation doubled.
+	The destruction is becoming impossible to control and it may be gone...forever. <a href="https://www.bbc.com/news/world-latin-america-49971563" target="_blank">See more.</a></p>
+  
+  <p class="articlecontent"><b>Why is it burning?</b> Between 1978 and 1988, an average of over 20,000 square 
+  kilometers was cut down each year and later became known as the Arc of Deforestation. People around the world demanded more meat and poultry which
+  led to the rise of the demand for soybeans, the primary food for livestock because it's high in protein. Since Brazil grew one of the most amounts
+  of soybeans, they joined in and took this opportunity to boost their economy. Small pastures were converted to massive soy farms. To add more farms,
+  farmers pushed further into the Amazon rainforest and cut down trees (mostly illegal). The deforestation of the rainforest took cost for the boosting 
+  economy in beef and soy industries in Brazil. The arc then expanded further north sparking fierce resistance from environmental groups in Brazil.
+  
+  <table class="clear-user-agent-styles" style="margin-left: 25%; margin-right: 25%; width: 50%;">
+	<tr>
+		<th style="padding: 10px; float: left; width: 50%; background: #97b1c0; text-align: center;"><b>Period</b></th>
+		<th style="padding: 10px; float: left; width: 50%; background: #97b1c0; text-align: center;"><b>Percent of 1970 cover remaining</b></th>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">1970</td>
+		<td style="padding: 10px; display: inline; float: left; width: 50%">99%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">1975</td>
+		<td style="padding: 10px; background: #97b1c0;display: inline; float: left; width: 50%;">> 96.5%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">1980</td>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">91.3%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">1985</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">91.3%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">1990</td>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">90.0%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">1995</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">88.8%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">2000</td>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">86.0%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">2005</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">83.2%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">2010</td>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">81.9%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">2015</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 50%;">81.2%</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">2020</td>
+		<td style="padding: 10px; display: inline; float: left; width: 50%;">77% (predicted)</td>
+	</tr>
+  </table>
+  <p style="text-align: center"><a href="https://en.wikipedia.org/wiki/Deforestation_of_the_Amazon_rainforest#Loss_rates" target="_blank">See more</a>.</p>
+  
+  <p class="articlecontent"><b>Something changed by the 2000s. </b> The annual destruction rate of the Amazon rainforest dropped by almost 70%.
+	It was the lowest deforestation rate of the Amazon since the 21st century. The Amazon is starting to thrive and will be. But there was one problem, the conservation
+	of the Amazon should be continuous, and the world didn't do that. The forest fire started burning again by 2010. Until now, the destruction rate increased
+	exponentially, destroying the Amazon much further. Many actions have been taken by South Americans especially Brazil. Marina Silva was Brazil's Environment 
+	Minister in 2003 when she helped craft a plan to stop deforestation. At the time of the 2000s, only 28% of the forest is protected by the government. Business
+	activities that destroy the forest were banned. More land was allotted to business that didn't destroy the forest like rubber-tapping and nut harvesting. The 
+	protected land was also added by the land of the indigenous people who preserve the forest. After these, half of the rainforest were protected. The government
+	enforced the Forest Code which states that private landowners can only destroy and clear 20% of their private land. Their activities will be tracked and monitored
+	by the forest service. IBAMA, a police agency, tracks and fine people who illegally cut parts of the rainforest. These actions were effective, dropping the rate of
+	deforestation by half in 2006. Soy and beef industries felt pressured by the deforestation acts done by their consumers so they signed the Soy Moratorium. meaning
+	they could continue to operate within existing farms, but they wouldn't buy soy from any newly deforested land in the Amazon. Other countries also gave donations
+	to Brazil to help save the forest.
+  <a href="https://www.climatechangenews.com/2014/09/25/marina-silva-the-amazon-champion-who-could-lead-brazil/" target="_blank">See more</a>.</p>
+  
+  <p class="articlecontent"><b>Are we...done?</b>Many ranchers, farmers, and landowners obeyed the law enforced by the environmentalists and the government on the Amazon. 
+  But this time, the Amazon is unlikely to survive another wave of deforestation. It's estimated that about 17% of the Amazon has been deforested in the last 50 years. 
+  A 2018 report estimated that, if the destroyed land reaches 20-25%, the whole rainforest could start to collapse. There won't be enough trees to cycle water for the
+  whole rainforest and each tree will begin to dry out and die. These massacre of plants will produce carbon dioxide as they die out, further warming our planet. But in 
+  Brazil, many politicians and agricultural businesses continue to ignore the science for the sake of profit. And the world continues to ignore the reality for the sake of
+  ...nothing. Clearing the Amazon for short-term gains overlooks the fact that the planet as we know it wouldn't exist without this rainforest. It’s why this place was saved 
+  once before and should be saved once more.
+
+</div>
+  
+<section id="one" class="wrapper style2">
+	<div class="inner">
+		<div class="grid-style">
+			<div>
+				<div class="box" >
+					<div class="image fit">
+						<img src="../images/rootoftheproblem.jpg" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>SOCIETY</p>
+							<h2>The Root of the Problem</h2>
+						</header>
+						<p> I have been to a lot of places and many of them have their “cleanliness 
+						policies” where you pick up trash that is not in the right place, segregate 
+						garbage properly, you know the drill.</p>
+						<footer class="align-center">
+							<a href="#" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="box">
+					<div class="image fit">
+						<img src="../images/endangeredpolaranimals.png" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>ANIMALS</p>
+							<h2>Critically Endangered Animals</h2>
+						</header>
+						<p> There are many endangered animals in the world and some of them are even less
+							than 1,000 in population.</p>
+						<footer class="align-center">
+							<a href="endangeredspecies.html" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-style">
+			<div>
+				<div class="box">
+					<div class="image fit">
+						<img src="../images/students to global warming.png" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>SOCIETY</p>
+							<h2>How aware are the PSHS-MC students?</h2>
+						</header>
+						<p> A survey was given to the PSHS-MC students to see gow much they
+						    are aware of global warming. You could learn on the way!</p>
+						<footer class="align-center">
+							<a href="awareness of global warming pshsmc.html" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="box" >
+					<div class="image fit">
+						<img src="../images/disruptionintheflowofnature.jpg" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>WORLD</p>
+							<h2>Disruption in the Flow of Nature</h2>
+						</header>
+						<p> Companies, big or small, have been gathering their own raw resources from 
+							our environment for decades, significantly decreasing them leaving almost 
+							none for the people who needed those resources. </p>
+						<footer class="align-center">
+							<a href="" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Agham Rd., Philippines</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 9472 899 113</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: pnecasio23@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Email" required="" name="Email"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Subject" required="" name="Subject"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Message" required="" name="Message"></p>
+      <p>
+        <button class="send-message" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+	<h3> SOURCES </h3>
+	<ul>
+		<li> <a href="https://www.iconfinder.com/"> IconFinder </a> </li>
+		<li> <a href="https://www.bbc.com/news/world-latin-america-49971563"> Amazon fires: What's the latest in Brazil? </a> </li>
+		<li> <a href="https://en.wikipedia.org/wiki/Deforestation_of_the_Amazon_rainforest"> Deforestation of the Amazon rainforest </a> </li>
+		<li> <a href="https://www.climatechangenews.com/2014/09/25/marina-silva-the-amazon-champion-who-could-lead-brazil/"> Marina Silva, the Amazon champion who could lead Brazil </a> </li>
+		<li> <a href="https://theintercept.com/2019/07/06/brazil-amazon-rainforest-indigenous-conservation-agribusiness-ranching/"> Rainforest on Fire </a> </li>
+		<li> <a href="https://science.sciencemag.org/content/344/6188/1118"> Slowing Amazon deforestation through public policy and interventions in beef and soy supply chains </a> </li>
+		<li> <a href="https://www.vox.com/science-and-health/2019/11/18/20970604/amazon-rainforest-2019-brazil-burning-deforestation-bolsonaro"> Brazil’s Amazon rainforest destruction is at its highest rate in more than a decade </a> </li>
+	</ul>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Sponsored by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script type="text/javascript" src="../js/sidebar.js"></script>
+<script type="text/javascript" src="../js/modal.js"></script>
+
+</body></html>

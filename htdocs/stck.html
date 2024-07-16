@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>EYESBERG - Games</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Games">
+<meta name="keywords" content="games, eyesberg">
+<meta name="author" content="Paul Necasio">
+<meta name="revised" content="Paul Necasio 02/12/2019">
+
+<link rel="stylesheet" href="..\css\website.css">
+<link rel="stylesheet" href="..\css\gallery.css">
+<link rel="stylesheet" href="..\css\vote.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../images/icon.png">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+h1 {font-size: 100px; text-align: center; color: black}
+h2 {font-size: 20px; text-align: center; color: black}
+p {text-align: center}
+
+body, html {
+	height: 100%;
+	line-height: 1.8;
+	background-color: #6f86d6; /* For browsers that do not support gradients */
+	background-image: linear-gradient(-90deg, #66a6ff, #89f7fe); /* Standard syntax (must be last) */
+}
+
+#score_div {
+	text-align: center;
+	background-image: linear-gradient(to right, #434343, #000000);
+	color: #ffffff;
+	padding: 10px;
+	font-size: 20px;
+}
+
+#restart {
+	display: none;
+	text-align: center;
+	width: 10%;
+	margin-left: 45%;
+	margin-right: 45%;
+	margin-bottom: 5px;
+}
+
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157744392-5"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-157744392-5');
+</script>
+</head>
+
+<body>
+<!-- Vote -->
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" class="butVote" style="z-index: 2; height: auto;">
+	<div class="parButton">
+	Enjoying ?
+	</div>
+	<div class="childButton">
+		Vote now !
+	</div>
+</button>
+
+<div id="modal-wrapper" class="modal" style="z-index: 2;">
+	<form class="modal-content animate">
+		<div class="imgContainer">
+			<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close">&times;</span>
+			<img src="..\images\support.png" alt="Support" class="support">
+			<div class="modalTitle" style="margin-top: 20px; text-align: center;">SUPPORT US</div>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">In 3 easy steps!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="http://bit.ly/EyesbergVoting" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Enter your email</p>
+			<p class="votep">[3] Select our website <b>'Eyesberg'</b> for "Best in Design" and "Best in Content"</p>
+			</ul>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">SEND FEEDBACKS!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="https://forms.gle/JXgGkjx23ZkzKQ876" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Rate us</p>
+			<p class="votep">[3] Send us feedbacks/suggestions!</p>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<a href="games.html" class="exit"><i class="fa fa-arrow-left"></i>Back to Games </a>
+<h2> ICESTACK </h2>
+
+<canvas id="gme-ar" width="1000px" height="600px"></canvas>
+<br/><br/>
+<button id="restart"><a href="stck.html">RESTART</a></button>
+<div id="score_div"><b>Score : </b>0</div>
+<script>"use strict";</script>
+
+<script type="text/javascript" src="../js/sidebar.js"></script>
+<script type="text/javascript" src="../js/modal.js"></script>
+<script type="text/javascript" src="../js/per.js"></script>
+<script type="text/javascript" src="../js/shapes.js"></script>
+<script type="text/javascript" src="../js/stck.js"></script>
+
+
+</body>
+</html>

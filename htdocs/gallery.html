@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>EYESBERG - Gallery</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/website.css">
+	<link rel="stylesheet" href="../css/gallery.css"/>
+	<link rel="stylesheet" href="../css/vote.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../images/icon.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157744392-5"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-157744392-5');
+</script>
+</head>
+<body>
+<!-- Vote -->
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" class="butVote" style="z-index: 2; height: auto;">
+	<div class="parButton">
+	Enjoying ?
+	</div>
+	<div class="childButton">
+		Vote now !
+	</div>
+</button>
+
+<div id="modal-wrapper" class="modal" style="z-index: 2;">
+	<form class="modal-content animate">
+		<div class="imgContainer">
+			<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close">&times;</span>
+			<img src="..\images\support.png" alt="Support" class="support">
+			<div class="modalTitle" style="margin-top: 20px; text-align: center;">SUPPORT US</div>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">In 3 easy steps!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="http://bit.ly/EyesbergVoting" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Enter your email</p>
+			<p class="votep">[3] Select our website <b>'Eyesberg'</b> for "Best in Design" and "Best in Content"</p>
+			</ul>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">SEND FEEDBACKS!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="https://forms.gle/JXgGkjx23ZkzKQ876" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Rate us</p>
+			<p class="votep">[3] Send us feedbacks/suggestions!</p>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-blue">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><img src="../images/icon1.jpg" style="width:120px;"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-question"></i>ABOUT</a>
+	  <a href="article.html" class="w3-bar-item w3-button"><i class="fa fa-sticky-note  "></i> ARTICLES</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+	  <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+	  <a href="shop.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+      <a href="contactus.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+  </div>
+  <div class="open-sidebar" id="open"><a href="javascript:void(0)" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+  </a></div>
+</div>
+
+<!-- Sidebar for small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate- w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="article.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-paper"></i> ARTICLES</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+  <a href="games.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+  <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+  <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+  <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+</nav>
+
+<!-- Banner -->
+<section class="banner full">
+	<article>
+		<img src="../images/ozonedepletion.jpg" alt="" />
+		<div class="inner">
+			<header>
+				<p>See the world</a></p>
+				<h2>Eyesberg</h2>
+			</header>
+		</div>
+	</article>
+</section>
+
+<section id="two" class="wrapper style3">
+	<div class="inner">
+		<header class="align-center">
+			<h2>Let your eyes see</h2>
+		</header>
+	</div>
+</section>
+
+<section id="three" class="wrapper style2">
+	<div class="inner">
+		<header class="align-center">
+			<p class="special">You may not feel or see it. But we can.</p>
+			<h2>GALLERY - CAUSES & EFFECTS</h2>
+		</header>
+		<div class="gallery">
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/sealevelrise.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text" style="margin: 0;"> The most recent special report from the Intergovernmental Panel on 
+						Climate Change says we can expect the oceans to rise between 10 and 30 inches 
+						(26 to 77 centimeters) by 2100 </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/flood.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> Flash floods can bring walls of water from 10 to 20 feet high. 
+						A car can be taken away in as little as 2 feet of water.  </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/oceangarbage1.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> There are five of them around the world, and the largest — the Great Pacific Garbage Patch — 
+						includes an estimated 1.8 trillion pieces of trash and covers an area twice the size of Texas. </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/oceangarbage2.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> There will be more plastic than fish (by weight) by 2050 </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/turtle1.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> Plastic bags are petroleum-based and do not biodegrade. Sea 
+						turtles and other marine creatures mistake plastics and other garbage as food 
+						(such as jellyfish) and ingest it. </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/whale1.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> The curvier beaked whale, a young male about 15 feet long 
+						and weighing 1,100 pounds, likely died of starvation and dehydration brought 
+						on by the plastic stuffing its belly.</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/drought.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> According to the World Meteorological Organization (WMO), 
+						the highest temperature ever recorded was 56.7 °C (134.1 °F) on 10 July 1913 
+						in Furnace Creek (Greenland Ranch), California, United States </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/severeweather.jpeg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> 207 confirmed tornadoes occurred 
+						in a span of 24 hours, with a total of 337 occurring throughout the duration 
+						of the outbreak. </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/toxicwaste.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> Like the Canadian refuse, South Korea’s 5,000 tons of 
+						garbage was shipped and passed through the Mindanao International Container 
+						Terminal in the southern Philippine province of Misamis Oriental in July. </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/oilspills.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> 1.3 million gallons (4.9 million liters) of petroleum are spilled into 
+						U.S. waters from vessels and pipelines in a typical year. </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/airpollution.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> Air pollution is one of the leading risk factors for
+						death. But its impacts go even further, also being one of the main 
+						contributors to global disease burden. </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="image fit">
+					<a href="#"><img src="../images/feelit.jpg" alt="" /></a>
+					<div class="overlay"> 
+						<div class="text"> Still not convinced? Read the articles provided below. </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+	<h3> SOURCES </h3>
+	<ul>
+		<li> <a href="https://www.iconfinder.com/"> IconFinder </a> </li>
+		<li> <a href="https://www.climate.gov/news-features/understanding-climate/carbon-dioxide-earths-hottest-topic-just-warming"> Carbon Dioxide: Earth's Hottest Topic is Just Warming Up </a> </li>
+		<li> <a href="https://www.sprep.org/climate_change/PYCC/documents/ccwaste.pdf"> FactSheet - Waste & Climate Change </a> </li>
+		<li> <a href="https://www.earthday.org/campaigns/reforestation/deforestation-climate-change/"> Deforestation and Climate Change </a> </li>
+		<li> <a href="https://climate.nasa.gov/causes/"> The Causes of Climate Change </a> </li>
+		<li> <a href="http://www.quqinghai.net/z/12167.html"> Sea level rises year by year, will Japan sink in the future? </a> </li>
+		<li> <a href="https://www.northwestern.edu/fm/fm-staff/10-ways-to-stop-global-warming.html"> 10 Ways to Stop Global Warming </a> </li>
+		<li> <a href="https://geonames.usgs.gov/apex/f?p=gnispq:5:0::NO::P5_ANTAR_ID:8412"> Antarctica Details </a> </li>
+		<li> <a href="https://www.nationalgeographic.com/environment/global-warming/big-thaw/"> The Big Thaw </a> </li>
+		<li> <a href="https://www.nationalgeographic.com/environment/global-warming/sea-level-rise/"> Sea level rise, explained </a> </li>
+		<li> <a href="https://www.dosomething.org/facts/11-facts-about-floods"> 11 Facts About Floods | DoSomething.org </a> </li>
+		<li> <a href="https://www.businessinsider.com/plastic-in-ocean-outweighs-fish-evidence-report-2017-1"> By 2050, the oceans could have more plastic than fish </a> </li>
+		<li> <a href="https://www.seeturtles.org/ocean-plastic"> Ocean Plastic — SEE Turtles </a> </li>
+		<li> <a href="https://www.nationalgeographic.com/environment/2019/03/whale-dies-88-pounds-plastic-philippines/"> This whale had more than 88 pounds of plastic in its stomach </a> </li>
+		<li> <a href="https://en.wikipedia.org/wiki/List_of_weather_records#Highest_temperatures_ever_recorded"> List of weather records </a> </li>
+		<li> <a href="https://ipen.org/news/philippines-becoming-rich-world-dumping-ground"> Philippines becoming a rich world dumping ground </a> </li>
+		<li> <a href="https://www.livescience.com/9885-faq-science-history-oil-spills.html"> FAQ: The Science and History of Oil Spills | Live Science </a> </li>
+		<li> <a href="https://ourworldindata.org/air-pollution"> Air pollution </a> </li>
+		
+	</ul>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Sponsored by <a href="https://templated.co/" title="Templated" target="_blank" class="w3-hover-text-green">Templated</a></p>
+  <p> © NECASIO, PIALAGO, DAVID. All rights reserved. </p>
+</footer>
+
+<script type="text/javascript" src="../js/sidebar.js"></script>
+<script type="text/javascript" src="../js/modal.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.scrollex.min.js"></script>
+<script src="../js/skel.min.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/main.js"></script>
+
+	</body>
+</html>

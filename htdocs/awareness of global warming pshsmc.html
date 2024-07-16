@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>EYESBERG - Articles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Awareness of Global Warming: PSHS-MC Students">
+<meta name="keywords" content="global warming, awareness, students, survey, article">
+<meta name="author" content="Meg David">
+<meta name="revised" content="Meg David 07/02/2020">
+
+<link rel="stylesheet" href="..\css\website.css">
+<link rel="stylesheet" href="..\css\gallery.css">
+<link rel="stylesheet" href="..\css\vote.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../images/icon.png">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+.ancontainer{
+	margin-left: 15%;
+	margin-right: 5%;
+}
+
+td {
+	text-align: center;
+}
+
+video{
+	display: block;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: width 0.4s
+}
+video:hover{
+	width: 40%;
+}
+.icon {
+	display : block;
+	opacity : 0;
+	position: absolute;
+	width: 100px;
+	margin-top : -200px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0; right: 0;
+
+	transition : 0.4s;
+}
+
+p:hover ~ .icon{
+	opacity : 1;
+}
+
+.icon:hover {
+	opacity : 1;
+	width : 200px;
+}
+.graphs{
+	display: block;
+	width: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.4s;
+}
+.graphs:hover{
+	width: 80%;
+}
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/students to global warming.png');
+  min-height: 100%;
+}
+</style>
+
+</head><body onload="myFunction()" style="margin:0;">
+<!-- Vote -->
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" class="butVote" style="z-index: 2; height: auto;">
+	<div class="parButton">
+	Enjoying ?
+	</div>
+	<div class="childButton">
+		Vote now !
+	</div>
+</button>
+
+<div id="modal-wrapper" class="modal" style="z-index: 2;">
+	<form class="modal-content animate">
+		<div class="imgContainer">
+			<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close">&times;</span>
+			<img src="..\images\support.png" alt="Support" class="support">
+			<div class="modalTitle" style="margin-top: 20px; text-align: center;">SUPPORT US</div>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">In 3 easy steps!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="http://bit.ly/EyesbergVoting" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Enter your email</p>
+			<p class="votep">[3] Select our website <b>'Eyesberg'</b> for "Best in Design" and "Best in Content"</p>
+			</ul>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">SEND FEEDBACKS!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="https://forms.gle/JXgGkjx23ZkzKQ876" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Rate us</p>
+			<p class="votep">[3] Send us feedbacks/suggestions!</p>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><img src="../images/icon1.jpg" style="width:120px;"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-question"></i>ABOUT</a>
+	  <a href="article.html" class="w3-bar-item w3-button"><i class="fa fa-sticky-note  "></i> ARTICLES</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+	  <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+	  <a href="shop.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+      <a href="contactus.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+  </div>
+  <div class="open-sidebar" id="open"><a href="javascript:void(0)" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+  </a></div>
+</div>
+
+<!-- Sidebar for small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate- w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="article.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-paper"></i> ARTICLES</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+  <a href="games.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+  <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+  <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+  <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="margin-left: 5%; margin-right: 16.5%; padding: 20px; background: rgba(255, 255, 255, 0.7);">
+    <span class="w3-jumbo w3-hide-small">Awareness of Global Warming: PSHS-MC Students</span><br>
+    <span class="author">By Meg David</span><br>
+    <span class="w3-large">Published: 31 December 2019</span><br>
+    <span class="w3-large">Updated: 02 January 2020</span>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <span>
+	<div id="andesign"></div>
+	<div class="ancontainer"><h3 class="articlename">Awareness of Global Warming: PSHS-MC Students</h3></div>
+  </span>
+	<div class="vid">
+	<video controls>
+		<source src="../videos/Survey 01.mp4" type="video/mp4">
+		<source src="../videos/Survey 01.ogg" type="video/ogg">
+		Your browser does not support HTML5 video.
+	</video>
+	</div>
+
+	
+  <p class="articlecontent"><b>Survey.</b> Based on a survey we gave, PSHS students are not well aware about the causes of 
+  global warming. Most were aware about the causes of the harmful gases produced by factories and cars to the environment. 
+  A lot of people didn’t know much about the cause of excessive use of water to global warming; some were even clueless!
+  </p>
+
+	<p class="articlecontent"><b>Glaciers as a cause of global warming.</b> Of all the surveyees, 45.5% said they knew a 
+	lot about it. 45.5% said they knew just enough, and 9% said they knew little about it. Based on the question we gave them 
+	(“What percentage of the snows of Kilimanjaro do you think have melted since 1912 to this day?”), only 22.7% got the right
+	answer which is “80%” <a href="https://answersdrive.com/what-percentage-of-the-earth-s-glaciers-have-melted-2916952" 
+	target="_blank">See more</a>. 22.7% is far from the 45.5% that said they knew a lot about this topic.</p>
+	<img src="../images/1.png" class="graphs">
+
+  <p class="articlecontent"><b>Deforestation as a cause of global warming.</b> One said they were an
+  expert in that field, 54.5% said they knew a lot about it, and 41.9% said they knew just enough about this. We asked our
+  participants one question: Around how many acres of forest do you think are lost each year? 72.7% answered correctly: 
+  18 000 000 acres! Could you imagine that? 18 million acres are lost every year this generation, what more could the next
+  generation loose? <a href="https://www.livescience.com/27692-deforestation.html" target="_blank">See more</a>.</p>
+	<img src="../images/2.png" class="graphs">
+  <p class="articlecontent"><b>Trash as a cause of global warming.</b> Here we go, where many of the surveyees said
+  they are aware about it a lot. It is surprising that at an average, around 15% of all waste is being recycled. Among the
+  answers of our participants, 27.3% got the right answer! 15% is just a few, what happens to the other 85%? Well, some go
+  to the rivers, oceans, forests, and many habitats of many animals. Imagine yourself living in a dumpster, would you live
+  long enough? <a href="http://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html" target="_blank">
+  See more</a>.</p>
+	<img src="../images/3.png" class="graphs">
+  <p class="articlecontent"><b>Carbon monoxide (CO) as a cause of global warming.</b> Carbon monoxide naturally exists - 
+  some from volcanoes and bushfires. It could naturally occur to be around 0.2 ppm only which isn’t harmful to humans
+  <a href="https://www.environment.gov.au/protection/publications/factsheet-carbon-monoxide-co">¹</a>, but what happens
+  when we add up all the carbon monoxide produced artificially and naturally? Well that would be a ton. Natural CO emissions
+  take up only 40% of the total CO in the atmosphere, while the artificial one’s take up 60%
+  <a href="https://www.sciencedirect.com/science/article/pii/B978012800159200021X">²</a>! Knowing these, we must use less of
+  the inventions that produce a lot of CO such as vehicles, factories, cigarettes, etc.</p>
+	<img src="../images/4.png" class="graphs">
+  <p class="articlecontent indent">Among the answers from the survey, 9.1% said forest fires had the most contribution to the
+  amount of CO in the atmosphere, 13.6% said transportation, and 77.3% said factories and industries. Surprisingly, 
+  transportation had the most contribution to the production of CO<a href="https://www.canada.ca/en/environment-climate-change/services/air-pollution/pollutants/common-contaminants/carbon-monoxide/main-emission-sources.html">³</a>
+  . Nowadays, a lot of people own cars meaning a lot more CO is being produced. <a href="https://www.kidde.com/home-safety/en/us/support/help-center/browse-articles/articles/what_are_the_carbon_monoxide_levels_that_will_sound_the_alarm_.html" target="_blank">
+  See more</a>.</p>
+	<img src="../images/5.png" class="graphs">
+  <p class="articlecontent"><b>Excessive use of water as a cause of global warming.</b>
+  <a href="http://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html" target="_blank">See more</a>.</p>
+  
+  <p style="text-align: center;"><b>Top 10 Countries That Use the Most Amount Water</b></p>
+  <table class="clear-user-agent-styles" style="margin-left: 25%; margin-right: 25%; width: 50%; text-align: center;">
+	<thead>
+		<tr>
+			<th style="padding: 10px; float: left; width: 10%; background: #97b1c0; text-align: center;"><b>Rank</b></th>
+			<th style="padding: 10px; float: left; width: 30%; background: #97b1c0; text-align: center;"><b>Country</b></th>
+			<th style="padding: 10px; float: left; width: 60%; background: #97b1c0; text-align: center;"><b>Amount of Water (in m³)</b></th>
+		</tr>
+	</thead>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 10%;">1</td>
+		<td style="padding: 10px; display: inline; float: left; width: 30%;">India</td>
+		<td style="padding: 10px; display: inline; float: left; width: 60%">760 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 10%;">2</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 30%;">China</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 60%;">600 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 10%;">3</td>
+		<td style="padding: 10px; display: inline; float: left; width: 30%;">United States</td>
+		<td style="padding: 10px; display: inline; float: left; width: 60%;">440 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 10%;">4</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 30%;">Indonesia</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 60%;">220 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 10%;">5</td>
+		<td style="padding: 10px; display: inline; float: left; width: 30%;">Pakistan</td>
+		<td style="padding: 10px; display: inline; float: left; width: 60%;">180 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 10%;">6</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 30%;">Iran</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 60%;">93 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 10%;">7</td>
+		<td style="padding: 10px; display: inline; float: left; width: 30%;">Mexico</td>
+		<td style="padding: 10px; display: inline; float: left; width: 60%;">86 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 10%;"><b>8</b></td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 30%;"><b>Philippines</b></td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 60%;"><b>85 000 000 000</b></td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; display: inline; float: left; width: 10%;">9</td>
+		<td style="padding: 10px; display: inline; float: left; width: 30%;">Vietnam</td>
+		<td style="padding: 10px; display: inline; float: left; width: 60%;">82 000 000 000</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 10%;">10</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 30%;">Japan</td>
+		<td style="padding: 10px; background: #97b1c0; display: inline; float: left; width: 60%;">81 000 000 000</td>
+	</tr>
+  </table>
+  <p style="text-align: center"><a href="https://www.worldometers.info/water/" target="_blank">See more</a>.</p>
+  
+  <p class="articlecontent">Let's not wait for the glaciers to melt and just be the size of a book like the one shown below.</p>
+  <a target="_blank" href="https://giphy.com/gifs/season-16-the-simpsons-16x11-3orif2ga5xZZkTsRyw"><img src="../images/maggieglacier.gif" alt="Simpsons Maggie and Glacier" title="Simpsons Glacier" style="margin-left: 30%; margin-right: 30%; width: 40%;"></a>
+</div>
+
+<!-- Related Articles -->
+<section id="one" class="wrapper style2">
+	<div class="inner">
+		<div class="grid-style">
+			<div>
+				<div class="box">
+					<div class="image fit">
+						<img src="../images/endangeredpolaranimals.png" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>ANIMALS</p>
+							<h2>Critically Endangered Animals</h2>
+						</header>
+						<p> There are many endangered animals in the world and some of them are even less
+							than 1,000 in population.</p>
+						<footer class="align-center">
+							<a href="endangeredspecies.html" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="box">
+					<div class="image fit">
+						<img src="../images/terraformingmars.jfif" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>TECHNOLOGY</p>
+							<h2>How do we terraform Mars?</h2>
+						</header>
+						<p> A once red, harsh planet can be transformed into a blue, lushful one! How can people
+							terraform it and what are their plans?</p>
+						<footer class="align-center">
+							<a href="terraformmars.html" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-style">
+			<div>
+				<div class="box">
+					<div class="image fit">
+						<img src="../images/forestfire.jpg" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>FORESTS</p>
+							<h2>Forest fires are spreading</h2>
+						</header>
+						<p> A simple strike in a tree can cause huge forest fires. Amazon rainforest is one of them. 
+							The lungs of the earth is slowly burning. Same as smoking a cigarette.</p>
+						<footer class="align-center">
+							<a href="forestfires.html" class="button alt">Learn More</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div class="box" >
+						<div class="image fit">
+							<img src="../images/disruptionintheflowofnature.jpg" alt="" />
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<p>WORLD</p>
+								<h2>Disruption in the Flow of Nature</h2>
+							</header>
+							<p> Companies, big or small, have been gathering their own raw resources from 
+								our environment for decades, significantly decreasing them leaving almost 
+								none for the people who needed those resources. </p>
+							<footer class="align-center">
+								<a href="" class="button alt">Learn More</a>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Question Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Have a question or comment? Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Agham Rd., Philippines</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 9472 899 113</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: pnecasio23@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Email" required="" name="Email"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Subject" required="" name="Subject"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Message" required="" name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Sponsored by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script type="text/javascript" src="../js/sidebar.js"></script>
+<script type="text/javascript" src="../js/modal.js"></script>
+
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0],newList=["Powerful and Easy-To-Use Control Panel.","1-Click Auto Installer and 24/7 Live Support.","Free Domain, Email and SSL Bundle.","5x faster WordPress performance","Weekly Backups and Fast Response Time."];if(notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 768px) {.web-hosting-90-off-image-wrapper {position: absolute;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} .web-hosting-90-off-image-wrapper {padding: 0 5%}} .content-wrapper {z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{border: 0; border-radius: 3px; background-color: #ff123a !important; padding: 15px 55px !important; margin-left: 30px; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">TRANSFER NOW</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 10px; padding-top: 5px; background-image: url(https://cdn.000webhost.com/000webhost/promotions/springsale/mountains-neon-background.jpg); background-color: #000000; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-color: #ff123a; border-width: 8px;"),notification.className="notice notice-error is-dismissible",(hostingerLogo=hostingerLogo[0]).setAttribute("src","https://cdn.000webhost.com/000webhost/promotions/springsale/logo-hostinger-white.svg"),hostingerLogo.setAttribute("style","float: none !important; height: auto; max-width: 100%; margin: 40px 20px 10px 30px;");var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.remove();var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Fast & Secure Web Hosting. <br>Limited time offer: get an SSL certificate for FREE",paragraph.setAttribute("style",'max-width: 600px; margin-left: 30px; font-family: "Open Sans", sans-serif; font-size: 16px; font-weight: 600;');var list=notification.getElementsByTagName("UL")[0];list.setAttribute("style","max-width: 675px;");for(var listElements=list.getElementsByTagName("LI"),i=0;i<newList.length;i++)listElements[i].setAttribute("style","color:#ffffff; list-style-type: disc; margin-left: 30px; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 300; line-height: 1.5;"),listElements[i].innerHTML=newList[i];listElements[listElements.length-1].remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/springsale/web-hosting-90-off.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script>
+
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; right: 0; display: flex; padding: 0 5%}} .web-hosting-90-off-image {max-width: 90%; margin-top: 20px;} .content-wrapper {z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important;  margin-bottom: 48px; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">TRANSFER NOW</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background: url(https://cdn.000webhost.com/000webhost/promotions/cyber-monday-2019-bg.jpg); background-size: cover; background-repeat: no-repeat; color: #ffffff; border-color: #ff123a; border-width: 8px;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Cyber Monday Sale",h1Tag.setAttribute("style",'color: white;  margin-top: 48px; font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 600;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 45px 0; font-family: "Roboto", sans-serif; font-size: 80px; font-weight: 600;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Don’t miss the opportunity to enjoy up to <strong>4x WordPress Speed, Free SSL and all premium features</strong> available for a fraction of the price!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/cyber-monday-2019-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body></html>

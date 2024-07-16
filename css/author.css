@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+  background-color: #85CBCC;
+}
+
+#slides {
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  right: 48%;
+  bottom: 17%;
+  overflow: hidden;
+}
+#slides ul {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#slides ul li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#slides ul li:nth-child(1) {
+  background-image: url(../images/team1.jpg);
+}
+#slides ul li:nth-child(2) {
+  background-image: url(../images/paul.jpg);
+}
+#slides ul li:nth-child(3) {
+  background-image: url(../images/zach.jpg);
+}
+#slides ul li:nth-child(4) {
+  background-image: url(../images/meg.jpg);
+}
+#slides ul li:nth-child(5) {
+  background-image: url(../images/mamaline.png);
+}
+#slides ul li:nth-child(6) {
+  background-image: url(../images/glacier.png);
+}
+
+ul#steps {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  height: 110px;
+  margin-top: -55px;
+}
+ul#steps li {
+  position: relative;
+  height: 100%;
+  color: #999;
+  font-family: "Abril Fatface", serif;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: color 666ms cubic-bezier(0.666, 0, 0.333, 1), font-size 666ms cubic-bezier(0.666, 0, 0.333, 1);
+  transition: color 666ms cubic-bezier(0.666, 0, 0.333, 1), font-size 666ms cubic-bezier(0.666, 0, 0.333, 1);
+}
+ul#steps li.active {
+  color: #A7D676;
+  font-size: 96px;
+}
+
+#titles {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 60%;
+  height: 330px;
+  margin-top: -165px;
+  padding: 110px 0;
+}
+#titles ul {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#titles li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: visibility 0ms linear 666ms, opacity 666ms cubic-bezier(0.666, 0, 0.333, 1);
+  transition: visibility 0ms linear 666ms, opacity 666ms cubic-bezier(0.666, 0, 0.333, 1);
+}
+#titles li.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0ms linear, opacity 666ms cubic-bezier(0.666, 0, 0.333, 1);
+  transition: visibility 0ms linear, opacity 666ms cubic-bezier(0.666, 0, 0.333, 1);
+}
+#titles li h2 {
+  height: 110px;
+  font-family: "Abril Fatface", serif;
+  font-size: 96px;
+  display: block;
+}
+#titles li span {
+  height: 110px;
+  color: #000;
+  font-family: Raleway;
+  background-color: #fff;
+  padding: 5px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.roller {
+  -webkit-transform: translate3d(0, 0%, 0);
+          transform: translate3d(0, 0%, 0);
+  -webkit-transition: -webkit-transform 666ms cubic-bezier(0.666, 0, 0.333, 1);
+  transition: -webkit-transform 666ms cubic-bezier(0.666, 0, 0.333, 1);
+  transition: transform 666ms cubic-bezier(0.666, 0, 0.333, 1);
+  transition: transform 666ms cubic-bezier(0.666, 0, 0.333, 1), -webkit-transform 666ms cubic-bezier(0.666, 0, 0.333, 1);
+}
+
+.socialbuttons {
+	width: 150px;
+	height: 50px;
+	border: none;
+	padding: 8px;
+	border-radius:15px;
+	color: #fff;
+	font-weight: bold;
+	font-family: Raleway;
+	margin-top: 20px;
+}
+
+.socialbuttons:hover {
+	opacity: 0.7;
+}
+
+.socialbuttons i {
+	margin-right: 10px;
+}
+
+.fb {
+	background-color: #3b5998;
+}
+
+.twt {
+	background-color: #55acee;
+}
+
+.gm {
+	background-color: #dd4b39;
+}
+
+.fs {
+	background-color: #c88d40;
+}
+
+.sw {
+	color: #f90021;
+	background-color: #000;
+	font-weight: bold;
+}

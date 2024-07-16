@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<title>EYESBERG - Donate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="../images/icon.png" />
+	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/noui/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/donate.css">
+	<link rel="stylesheet" type="text/css" href="../css/website.css">
+	<link rel="stylesheet" href="..\css\vote.css">
+<style>
+	body, .w3-top { font-family: Raleway}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157744392-5"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-157744392-5');
+</script>
+
+<body>
+<!-- Vote -->
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" class="butVote" style="z-index: 2; height: auto;">
+	<div class="parButton">
+	Enjoying ?
+	</div>
+	<div class="childButton">
+		Vote now !
+	</div>
+</button>
+
+<div id="modal-wrapper" class="modal" style="z-index: 2;">
+	<form class="modal-content animate">
+		<div class="imgContainer">
+			<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close">&times;</span>
+			<img src="..\images\support.png" alt="Support" class="support">
+			<div class="modalTitle" style="margin-top: 20px; text-align: center;">SUPPORT US</div>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">In 3 easy steps!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="http://bit.ly/EyesbergVoting" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Enter your email</p>
+			<p class="votep">[3] Select our website <b>'Eyesberg'</b> for "Best in Design" and "Best in Content"</p>
+			</ul>
+		</div>
+		<div class="container">
+			<p class="votep" style="text-align: center; font-size: 30px;">SEND FEEDBACKS!</p>
+			<ul class="steps">
+			<p class="votep">[1] Go <a href="https://forms.gle/JXgGkjx23ZkzKQ876" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p class="cotep">[2] Rate us</p>
+			<p class="votep">[3] Send us feedbacks/suggestions!</p>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-blue">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><img src="../images/icon1.jpg" style="width:120px;"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-question"></i>ABOUT</a>
+	  <a href="article.html" class="w3-bar-item w3-button"><i class="fa fa-sticky-note  "></i> ARTICLES</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+	  <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+	  <a href="shop.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+      <a href="contactus.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+  </div>
+  <div class="open-sidebar" id="open"><a href="javascript:void(0)" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+  </a></div>
+</div>
+
+<!-- Sidebar for small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate- w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="article.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-paper"></i> ARTICLES</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+  <a href="games.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+  <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+  <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+  <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+</nav>
+
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>DONATE PLANS</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="gradient2 w3-xlarge w3-padding-32">Bonsai</li>
+        <li class="w3-padding-16"><b>10 </b> trees will be planted </li>
+        <li class="w3-padding-16"><b>1 Mug, 1 Phonecase </b> for free</li>
+        <li class="w3-padding-16"><b> Basic planting </b> kits </li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+		<li class="w3-padding-16"><b> Iron </b> Badge </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱ 249 / $ 5</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="gradient2 w3-xlarge w3-padding-48" style="color:black;">Birch</li>
+        <li class="w3-padding-16"><b>20 </b> trees will be planted </li>
+        <li class="w3-padding-16"><b>2 Mugs, 1 Phonecase, 1 Backpack </b> for free</li>
+        <li class="w3-padding-16"><b> Pro planting, Basic gardening </b> kits </li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+		<li class="w3-padding-16"><b> Gold </b> Badge </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱ 499 / $ 10</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="gradient2 w3-xlarge w3-padding-32">Sequoia</li>
+        <li class="w3-padding-16"><b> 100 </b> trees will be planted </li>
+        <li class="w3-padding-16"><b> 2 Mugs, 1 Phonecase, 1 Backpack, 2 caps, 3 T-Shirts </b> for free</li>
+        <li class="w3-padding-16"><b> Premium planting, Pro gardening </b> kits </li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+		<li class="w3-padding-16"><b> Diamond </b>  Badge </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱ 2399 / $ 50</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Donate plans -->
+<div class="container-contact100">
+	<div class="wrap-contact100">
+		<form class="contact100-form validate-form" method="post">
+			<span class="contact100-form-title">
+				Donate to nature.
+			</span>
+
+			<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+				<span class="label-input100">FULL NAME *</span>
+				<input class="input100" type="text" name="name" placeholder="Enter Your Name" required>
+			</div>
+
+			<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Your Email (e@a.x)">
+				<span class="label-input100">Email *</span>
+				<input class="input100" type="email" name="email" placeholder="Enter Your Email " required>
+			</div>
+
+			<div class="wrap-input100 bg1 rs1-wrap-input100">
+				<span class="label-input100">Phone *</span>
+				<input class="input100" type="text" name="phone" placeholder="Enter Number Phone" required>
+			</div>
+			
+			<div class="wrap-input100 input100-select bg1">
+				<span class="label-input100">DONATION PLAN *</span>
+				<div>
+					<select name="service" class="option">
+						<option>Please choose</option>
+						<option>Bonsai</option>
+						<option>Birch</option>
+						<option>Sequoia</option>
+						<option>Others </option>
+					</select>
+					<div class="dropDownSelect2"></div>
+				</div>
+			</div>
+			
+			<div class="wrap-input100 bg1 rs1-wrap-input100">
+				<span class="label-input100">If no donation plan, how much will you donate? (₱ 25 / $ 0.5 per tree)  *</span>
+				<input class="input100" type="number" name="quantity" min="1">
+			</div>
+			
+			<div class="wrap-input100 bg1 rs1-wrap-input100">
+				<span class="label-input100">When should we plant the trees? (Do it ASAP!!!)  *</span>
+				<input class="input100" type="datetime-local" name="plantingdate">
+			</div>
+			
+			<div class="wrap-input100 input100-select bg1">
+				<span class="label-input100">PAYMENT METHOD *</span>
+				<div>
+					<select name="service" class="option">
+						<option>Please choose</option>
+						<option>Mobile Load </option>
+						<option>7/11</option>
+						<option>PayPal</option>
+						<option>Palawan Express</option>
+						<option>Credit Card </option>
+					</select>
+					<div class="dropDownSelect2"></div>
+				</div>
+			</div>
+			
+			<div class="w-full js-show-service">
+				<div class="wrap-contact100-form-radio">
+					<span class="label-input100"> In which continent do you want the trees to be planted? (Submit multiple forms for multiple places) </span>
+
+					<div class="contact100-form-radio m-t-15">
+						<input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" checked="checked">
+						<label class="label-radio100" for="radio1">
+							Asia
+						</label>
+					</div>
+
+					<div class="contact100-form-radio">
+						<input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital">
+						<label class="label-radio100" for="radio2">
+							North America
+						</label>
+					</div>
+
+					<div class="contact100-form-radio">
+						<input class="input-radio100" id="radio3" type="radio" name="type-product" value="service">
+						<label class="label-radio100" for="radio3">
+							Australia and Oceania
+						</label>
+					</div>
+
+					<div class="contact100-form-radio">
+						<input class="input-radio100" id="radio4" type="radio" name="type-product" value="service">
+						<label class="label-radio100" for="radio4">
+							South America
+						</label>
+					</div>
+
+					<div class="contact100-form-radio">
+						<input class="input-radio100" id="radio5" type="radio" name="type-product" value="service">
+						<label class="label-radio100" for="radio5">
+							Africa
+						</label>
+					</div>
+
+					<div class="contact100-form-radio">
+						<input class="input-radio100" id="radio6" type="radio" name="type-product" value="service">
+						<label class="label-radio100" for="radio6">
+							Europe
+						</label>
+					</div>
+				</div>
+			</div>
+			
+			<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
+				<span class="label-input100">What color do you want your text to be?</span>
+				<input class="input-100" id="color" type="color" name="textcolor" value="#000">
+			</div>
+
+			<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
+				<span class="label-input100">Add a message!</span>
+				<textarea class="input100" name="message" placeholder="Your message here + Specific place in the continent for the trees to be planted"></textarea>
+			</div>
+
+			<div class="container-contact100-form-btn">
+				<button class="contact100-form-btn">
+					<span>
+						Submit
+						<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+					</span>
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="w3-container w3-light-grey sources" style="padding:128px 16px">
+	<h3> SOURCES </h3>
+	<ul>
+		<li> <a href="https://www.iconfinder.com/"> IconFinder </a> </li>
+	</ul>
+</div>
+
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="gallery.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Sponsored by <a href="https://colorlib.com/" title="Colorlib" target="_blank" class="w3-hover-text-green">colorlib</a></p>
+  <p> © NECASIO, PIALAGO, DAVID. All rights reserved. </p>
+</footer>
+
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../vendor/animsition/js/animsition.min.js"></script>
+	<script src="../vendor/bootstrap/js/popper.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="../js/sidebar.js"></script>
+	<script type="text/javascript" src="../js/modal.js"></script>
+
+</body>
+</html>
+
+	<script src="../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="../vendor/countdowntime/countdowntime.js"></script>
+	<script src="../vendor/noui/nouislider.min.js"></script>
+	<script src="../js/donate.js"></script>
+	<script type="text/javascript" src="../js/donate.js"></script>
+	<script type="text/javascript" src="../js/gtag.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
+

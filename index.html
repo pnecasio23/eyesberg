@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<title>EYESBERG - Save the environment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\website.css">
+<link rel="stylesheet" href="css\vote.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/icon.png" />
+<style>
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+a{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    border:  none;
+}
+a:hover{
+    color: #357d7e;
+}
+.w3-bar-item .w3-button{
+	color: black;
+	border: none;
+}
+.author{
+	font-size: 30px;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('images/iceberg.jpg');
+  min-height: 100%;
+}
+
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-blue">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="images/icon1.jpg" style="width:120px;"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-question"></i>ABOUT</a>
+	  <a href="htdocs/article.html" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-sticky-note  "></i> ARTICLES</a>
+      <a href="htdocs/gallery.html" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-th"></i> GALLERY</a>
+	  <a href="htdocs/games.html" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="htdocs/donate.html" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-usd"></i> DONATE</a>
+	  <a href="htdocs/shop.html" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-shopping-cart"></i> SHOP</a>
+      <a href="htdocs/contactus.html" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif;"><i class="fa fa-envelope"></i> CONTACT US</a>
+	</div>
+  </div>
+  <div class="open-sidebar" id="open"><a href="javascript:void(0)" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+  </a></div>
+</div>
+
+<!-- Sidebar for small screens) -->
+<nav class="w3-sidebar w3-black w3-bar-block w3-card w3-animate- w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="htdocs/article.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-paper"></i> ARTICLES</a>
+  <a href="htdocs/gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+  <a href="htdocs/games.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
+  <a href="htdocs/donate.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+  <a href="htdocs/shop.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
+  <a href="htdocs/contactus.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black fullscreen-bg home-title" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small animation-left">YMSAT 2020: Fostering Interrelationship Towards Unity</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium animation-left"> EYESBERG by Cesium '23 </span><br>
+    <span class="w3-large animation-left">Start small. Help save the environment. Stop heating the planet.</span>
+    <p><a href="#about" class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-on gradient">Learn more about global warming</a></p>
+ </div> 
+</header>
+
+<!-- Vote -->
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" class="butVote" style="z-index: 2;">
+	<div class="parButton">
+	Enjoying ?
+	</div>
+	<div class="childButton">
+		Vote now !
+	</div>
+</button>
+
+<div id="modal-wrapper" class="modal">
+	<form class="modal-content animate">
+		<div class="imgContainer">
+			<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+			<img src="images\support.png" alt="Support" class="support">
+			<div class="modalTitle" style="margin-top: 20px; text-align: center;">SUPPORT US</div>
+		</div>
+		<div class="container">
+			<p style="text-align: center; font-size: 30px;">Vote in 3 easy steps!</p>
+			<ul class="steps">
+			<p>[1] Go <a href="http://bit.ly/EyesbergVoting" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p>[2] Enter your email</p>
+			<p>[3] Select our website <b>'Eyesberg'</b> for "Best in Design" and "Best in Content"</p>
+			</ul>
+		</div>
+		<div class="container">
+			<p style="text-align: center; font-size: 30px;">SEND FEEDBACK!</p>
+			<ul class="steps">
+			<p>[1] Go <a href="https://forms.gle/JXgGkjx23ZkzKQ876" target="_blank" style="color: #85CBCC;" class="votingLink">HERE</a></p>
+			<p>[2] Rate us </p>
+			<p>[3] Send us feedbacks and suggestions</p>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center"> <span class="emphasis1"> ABOUT THIS WEBSITE </span> </h3>
+  <p class="w3-center w3-large">Eyesberg is a website that lets people be aware about the effects of global warming especially the <span class="emphasis2"> melting of glaciers </span> that are making the sea levels rise abruptly. We want to let them see what the problems are that the world is encountering, the problems that some of us don’t even know exists. This website contains articles about why global warming exists, why icebergs are melting, how bad forest fires are right now, which animals are about to go extinct and many more. Our aim is to spread knowledge and awareness about these problems, other effects of global warming and help save or at least prevent the world from being closer to <span class="emphasis2"> “the end” </span>. Hence, the word EYES on this website's name EYESberg instead of ICEberg. Why "iceberg"? Because <span class="emphasis2"> icebergs are the most affected by global warming </span> and they should get the spotlight because it takes years for them to form.</p><br>
+  
+  <p class="w3-center w3-large">There are 4 things that greatly cause global warming:</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <img src="images\carbonemissions.png" class="abouticons" alt="Carbon Emissions"/>
+      <p class="w3-large"> <span class="emphasis1"> Carbon Emissions </span> </p>
+      <p>When we burn fossil fuels like coal, oil, and gas, including those cars that emit smoke, we release
+	  CO2 pollution into the atmosphere. Since 1958, CO2 has been measured at the Mauna Loa Observatory in 
+	  Hawaii. In 1958, the CO2 concentration in the atmosphere was measured at 316ppm, as of May 2016 it was 407ppm.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images\garbage.png" class="abouticons" alt="Garbage"/>
+      <p class="w3-large"> <span class="emphasis1"> Garbage </span> </p>
+      <p>All manufactured goods use natural resources such as water, fuel, metal, and timber in their production 
+	  and this results in the emmision of greenhouse gases, particularly carbon dioxide and other pollutants.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images\deforestation.png" class="abouticons" alt="Deforestation"/>
+      <p class="w3-large"><span class="emphasis1"> Deforestation </span> </p>
+      <p> Deforestation is the second leading cause of global warming and produces about 24% of global greenhouse
+	  gas emmisions. In some countries, such as Brazil and Indonesia, deforestation and forest degradation are by
+	  far the main source of national greenhouse gas emissions.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images\greenhousegases.png" class="abouticons" alt="Greenhouse Gases"/>
+      <p class="w3-large"><span class="emphasis1"> Greenhouse Gases </span> </p>
+      <p>Certain gases in the atmosphere block heat from escaping. Long-lived gases that remain semi-permanently in the 
+	  atmosphere and do not respond physically or chemically to changes in temperature are described as "forcing" climate 
+	  change. Gases, such as water vapor, which respond physically or chemically to changes in temperature are seen as "feedbacks."</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3> <span class="emphasis1"> We can feel it. </span> </h3>
+      <p>You may not feel the changes, but most of us do.</p>
+      <p><a href="htdocs\gallery.html" class="w3-button w3-black gradient"><i class="fa fa-th"> </i> View Our Gallery</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large shinycard" src="images\feelit.jpg" alt="Smoke clouds" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center"> <span class="emphasis1"> THE TEAM </span> </h3>
+  <p class="w3-center w3-large">The people of PSHS that run this website</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images\paul.jpg" alt="Paul Necasio" style="width:100%">
+        <div class="w3-container">
+          <h3>Paul Necasio</h3>
+          <p class="w3-opacity">PSHS MC Student - Batch 2023</p>
+          <p class="contactbutton"><a href="htdocs/contactus.html"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images\zach.jpg" alt="Zach Pialago" style="width:100%">
+        <div class="w3-container">
+          <h3>Zachary Pialago</h3>
+          <p class="w3-opacity">PSHS MC Student - Batch 2023</p>
+          <p class="contactbutton"><a href="htdocs/contactus.html"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images\meg.jpg" alt="Meg David" style="width:100%">
+        <div class="w3-container">
+          <h3>Meg David</h3>
+          <p class="w3-opacity">PSHS MC Student - Batch 2023</p>
+          <p class="contactbutton"><a href="htdocs/contactus.html"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images\mamaline.png" alt="Ms. Aline" style="width:100%">
+        <div class="w3-container">
+          <h3>Ms. Aline Mendoza</h3>
+          <p class="w3-opacity">PSHS MC Teacher - CompSci 3</p>
+          <p class="contactbutton"><a href="htdocs/contactus.html"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center gradient2 w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">0.8° Celsius</span>
+    <br>Temperature Increase
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge" style="line-height: 1;">2 118 939 hectares</span>
+    <br>Forest Fires
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">280 billion tons</span>
+    <br>Melted Ice (in Greenland alone)
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">37.1 billion tons</span>
+    <br>Carbon Emmisions (metric tons)
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center"> <span class="emphasis1"> EFFECTS OF GLOBAL WARMING </span> </h3>
+  <p class="w3-center w3-large">What we've done to nature</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="images\sealevelrise.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sea level rise">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images\forestfire.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Forest fires">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images\hazardgas.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hazardous air in Indonesia">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images\drought.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Droughts">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <a href="htdocs\gallery.html" class="w3-button w3-black gradient"> See More >>> </a>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64" style="margin-bottom:50px;">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3> <span class="emphasis1"> If you helped... </span> </h3>
+      <p>Even for a small amount, these small changes may lead to a brighter future </p>
+      <p>Each tree will be named after you and you will be remembered by future generations.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-tree w3-margin-right"></i>Trees we planted (Goal: 1,000)</p>
+      <div class="w3-grey">
+        <div class="w3-container gradient2 w3-center" style="width:12%">120</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-recycle w3-margin-right"></i>Tons of recycled materials (Goal: 100)</p>
+      <div class="w3-grey">
+        <div class="w3-container gradient2 w3-center" style="width:2.3%">2.3</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-money w3-margin-right"></i>Funds Raised (Goal: ₱10,000)</p>
+      <div class="w3-grey">
+        <div class="w3-container gradient2 w3-center" style="width:15%">₱1,500.00</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3> <span class="emphasis1"> DONATE </span> </h3>
+  <p class="w3-large">Donate to nature. Help save them with our donation plans</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="gradient2 w3-xlarge w3-padding-32">Bonsai</li>
+        <li class="w3-padding-16"><b>20 </b> trees will be planted </li>
+        <li class="w3-padding-16"><b>1 Mug, 1 Phonecase </b> for free</li>
+        <li class="w3-padding-16"><b> Basic planting </b> kits </li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+		<li class="w3-padding-16"><b> Iron </b> Badge </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱ 249 / $ 5</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="htdocs\donate.html"><button class="w3-button w3-black w3-padding-large">Sign Up</button></a>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="gradient2 w3-xlarge w3-padding-48" style="color:black;">Birch</li>
+        <li class="w3-padding-16"><b>40 </b> trees will be planted </li>
+        <li class="w3-padding-16"><b>2 Mugs, 1 Phonecase, 1 Backpack </b> for free</li>
+        <li class="w3-padding-16"><b> Pro planting, Basic gardening </b> kits </li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+		<li class="w3-padding-16"><b> Gold </b> Badge </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱ 499 / $ 10 </h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="htdocs\donate.html"><button class="w3-button w3-black w3-padding-large">Sign Up</button></a>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="gradient2 w3-xlarge w3-padding-32">Sequoia</li>
+        <li class="w3-padding-16"><b> 100 </b> trees will be planted </li>
+        <li class="w3-padding-16"><b> 2 Mugs, 1 Phonecase, 1 Backpack, 2 caps, 3 T-Shirts </b> for free</li>
+        <li class="w3-padding-16"><b> Premium planting, Pro gardening </b> kits </li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+		<li class="w3-padding-16"><b> Diamond </b>  Badge </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱ 2399 / $ 50 </h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="htdocs\donate.html"><button class="w3-button w3-black w3-padding-large">Sign Up</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Agham Rd., Philippines</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 9472 899 113</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: pnecasio23@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border-teal" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey sources" style="padding:128px 16px">
+	<h3> SOURCES </h3>
+	<ul>
+		<li> <a href="https://www.iconfinder.com/"> IconFinder </a> </li>
+		<li> <a href="https://www.climate.gov/news-features/understanding-climate/carbon-dioxide-earths-hottest-topic-just-warming"> Carbon Dioxide: Earth's Hottest Topic is Just Warming Up </a> </li>
+		<li> <a href="https://www.sprep.org/climate_change/PYCC/documents/ccwaste.pdf"> FactSheet - Waste & Climate Change </a> </li>
+		<li> <a href="https://www.earthday.org/campaigns/reforestation/deforestation-climate-change/"> Deforestation and Climate Change </a> </li>
+		<li> <a href="https://climate.nasa.gov/causes/"> The Causes of Climate Change </a> </li>
+		<li> <a href="http://www.quqinghai.net/z/12167.html"> Sea level rises year by year, will Japan sink in the future? </a> </li>
+		<li> <a href="https://www.northwestern.edu/fm/fm-staff/10-ways-to-stop-global-warming.html"> 10 Ways to Stop Global Warming </a> </li>
+		<li> <a href="https://geonames.usgs.gov/apex/f?p=gnispq:5:0::NO::P5_ANTAR_ID:8412"> Antarctica Details </a> </li>
+		<li> <a href="https://www.nationalgeographic.com/environment/global-warming/big-thaw/"> The Big Thaw </a> </li>
+	</ul>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Sponsored by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p> © NECASIO, PIALAGO, DAVID. All rights reserved. </p>
+</footer>
+
+<div class="video-ad" id="close">
+    <div class="add-button"> <button onclick="closead()"> X </button> </div>
+	<iframe width="400" height="200" src="https://www.youtube.com/embed/DKTg9RpTLMM?controls=0"></iframe>
+</div>
+ 
+<script type="text/javascript" src="js/sidebar.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/darkmode.js"></script>
+
+<script>
+	var closead = function() {
+		document.getElementById("close").style.display = "none";
+	}
+	
+	var player,
+		shinycard  = document.querySelector( '.shinycard' );
+
+
+	// Shine effect
+	shinycard.onmousemove = function (e) {
+		const x = e.pageX - card.offsetLeft;
+		const y = e.pageY - card.offsetTop;
+
+		card.style.setProperty( '--x', x + 'px' );
+		card.style.setProperty( '--y', y + 'px' );
+	}
+</script>
+</html>
